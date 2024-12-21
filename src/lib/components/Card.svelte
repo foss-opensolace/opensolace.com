@@ -54,7 +54,7 @@
 {/snippet}
 
 <svelte:element
-	this={anchor ? 'a' : 'button'}
+	this={anchor ? 'a' : 'article'}
 	href={anchor}
 	class="flex h-fit w-full max-w-96 items-center gap-4 rounded-lg border border-neutral-900 bg-[#090a0a] p-4"
 	class:cursor-default={anchor === undefined}
