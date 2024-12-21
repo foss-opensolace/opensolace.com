@@ -17,7 +17,7 @@
 	let { title, children, type = 'large', anchor, image }: Props = $props();
 
 	function generateImageClass(): string {
-		const defaults = 'border-neutral-900 object-contain';
+		const defaults = 'border-accent object-contain';
 
 		switch (type) {
 			case 'large':
@@ -56,7 +56,7 @@
 <svelte:element
 	this={anchor ? 'a' : 'article'}
 	href={anchor}
-	class="flex h-fit w-full max-w-96 items-center gap-4 rounded-lg border border-neutral-900 bg-[#090a0a] p-4"
+	class="bg-dark border-accent flex h-fit w-full max-w-96 items-center gap-4 rounded-lg border p-4"
 	class:cursor-default={anchor === undefined}
 	class:flex-col={type === 'large'}
 >

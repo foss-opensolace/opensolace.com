@@ -20,10 +20,10 @@
 	tabindex={0}
 	href={anchor}
 	type={submit === true ? 'submit' : 'button'}
-	class="inline-flex items-center gap-2 truncate rounded-md px-4 py-2 transition-all hover:scale-105 hover:bg-neutral-800 active:scale-100 active:bg-neutral-900"
-	class:bg-neutral-900={!bordered}
+	class="active:bg-accent inline-flex items-center gap-2 truncate rounded-md px-4 py-2 transition-all hover:scale-105 hover:bg-neutral-800 active:scale-100"
+	class:bg-accent={!bordered}
 	class:border={bordered}
-	class:border-neutral-900={bordered}
+	class:border-accent={bordered}
 	{onclick}
 >
 	{#if icon}

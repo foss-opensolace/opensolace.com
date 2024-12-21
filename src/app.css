@@ -3,5 +3,5 @@
 @import 'tailwindcss/utilities';
 
 body {
-	@apply bg-[#090a0a] text-[#D9D9D9];
+	@apply bg-dark text-light;
 }
