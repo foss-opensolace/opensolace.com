@@ -43,7 +43,7 @@
 
 {#snippet body()}
 	<div>
-		<h3 class="text-xl font-bold">{title}</h3>
+		<h3 class="text-xl font-bold text-secondary">{title}</h3>
 
 		{#if children}
 			<div>
@@ -56,7 +56,7 @@
 <svelte:element
 	this={anchor ? 'a' : 'article'}
 	href={anchor}
-	class="bg-dark border-accent flex h-fit w-full max-w-96 items-center gap-4 rounded-lg border p-4"
+	class="flex h-fit w-full max-w-96 items-center gap-4 rounded-lg border border-accent bg-dark p-4"
 	class:cursor-default={anchor === undefined}
 	class:flex-col={type === 'large'}
 >
@@ -68,6 +68,6 @@
 		{@render img(image)}
 	{:else if type === 'line'}
 		{@render img(image)}
-		<h3>{title}</h3>
+		<h3 class="text-secondary">{title}</h3>
 	{/if}
 </svelte:element>
