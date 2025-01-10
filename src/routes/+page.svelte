@@ -1,15 +1,10 @@
-<script lang="ts">
-	import Icon from '@iconify/svelte';
-</script>
-
 <svelte:head>
 	<title>Opensolace - Home</title>
 </svelte:head>
 
-<section class="flex flex-col items-center gap-2">
-	<p class="text-center">Still under construction...</p>
+<h1 class="mt-36 text-center text-5xl font-extralight">
+	Your all-in-one <span class="text-primary">Architecture</span> &amp;
+	<span class="text-primary">Productivity</span> suite.
+</h1>
 
-	<a href="https://github.com/foss-opensolace">
-		<Icon icon="mdi:github" class="size-12" />
-	</a>
-</section>
+<p class="text-center pt-8">Work in progress.</p>
