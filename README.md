@@ -1,1 +1,1 @@
-# www.opensolace.com
+# opensolace.com
